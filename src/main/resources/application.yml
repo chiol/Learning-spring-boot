@@ -1,0 +1,28 @@
+logging:
+  level:
+    com:
+      springtest:
+        learningwebflux: DEBUG
+    org:
+      springframework:
+        data: TRACE
+    reactor:
+      core: DEBUG
+      util: TRACE
+
+
+management:
+  endpoints:
+    web:
+      base-path: /application
+      exposure:
+        include: "*"
+  endpoint:
+    configprops:
+      enabled: true
+    health:
+      enabled: true
+      show-details: always
+#spring:
+#  profiles:
+#    active: simulator
